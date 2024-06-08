@@ -1,6 +1,4 @@
-Password Generator Code
-java
-Copy code
+
 import java.util.Random;
 
 public class PasswordGenerator {
@@ -69,29 +67,3 @@ public class PasswordGenerator {
         System.out.println("Generated Password: " + password);
     }
 }
-Explanation
-Character Sets:
-
-The character sets for uppercase letters, lowercase letters, digits, and special characters are defined as constant strings.
-generatePassword Method:
-
-Input: Takes the desired length of the password as an argument.
-Combine Character Sets: Combines all character sets into one string called allCharacters.
-Random Instance: Creates a Random instance to generate random numbers.
-StringBuilder: Uses StringBuilder to construct the password.
-Ensure at Least One of Each Type: Ensures the password contains at least one character from each of the four character sets by appending a random character from each set.
-Fill Remaining Length: Fills the remaining characters with random selections from the combined character set.
-Shuffle: Shuffles the final string to ensure randomness using the shuffleString method.
-shuffleString Method:
-
-Convert to Character Array: Converts the input string to a character array.
-Shuffle Array: Shuffles the array by swapping characters at random positions.
-Return Shuffled String: Converts the shuffled character array back to a string and returns it.
-main Method:
-
-Password Length: Sets the desired password length.
-Generate Password: Calls generatePassword to generate a random password.
-Print Password: Prints the generated password to the console.
-Usage
-You can adjust the passwordLength in the main method to generate passwords of different lengths.
-The generatePassword method ensures the generated password includes at least one uppercase letter, one lowercase letter, one digit, and one special character, making it more secure.
